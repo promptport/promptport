@@ -58,7 +58,7 @@ const config = {
         title: 'PromptPort',
         logo: {
           alt: 'PromptPort Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
         items: [
           {
