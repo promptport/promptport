@@ -4,7 +4,7 @@ title: 📖 Introduction
 sidebar_position: 1
 ---
 
-------
+![Social](/img/social.jpg)
 
 ## Prompt
 

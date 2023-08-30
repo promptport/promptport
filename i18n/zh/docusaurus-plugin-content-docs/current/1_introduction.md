@@ -4,7 +4,7 @@ title: 🌟 介绍
 sidebar_position: 1
 ---
 
-------
+![Social](/img/social.jpg)
 
 ## 提示词（Prompt）
 

@@ -73,8 +73,8 @@ const config = {
       ],
     },
     prism: {
-      theme: require('prism-react-renderer/themes/github'),
-      darkTheme: require('prism-react-renderer/themes/dracula'),
+      theme: lightCodeTheme,
+      darkTheme: darkCodeTheme,
     },
     footer: {
       style: 'dark',
