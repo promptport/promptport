@@ -1,6 +1,6 @@
 ---
 id: prompt-types
-title: 📋 Types of prompts
+title: 📋 Types Of Prompts
 sidebar_position: 2
 ---
 

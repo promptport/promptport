@@ -59,7 +59,7 @@ const config = {
           type: 'docSidebar',
           sidebarId: 'promptSidebar',
           position: 'left',
-          label: 'Docs',
+          label: 'Prompt',
         },
         {
           type: 'localeDropdown',

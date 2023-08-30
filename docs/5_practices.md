@@ -1,6 +1,6 @@
 ---
 id: prompt-practices
-title: 🏆 Best practices
+title: 🏆 Best Practices
 sidebar_position: 5
 description: Prompt best practices for learning.
 ---

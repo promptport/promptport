@@ -1,6 +1,6 @@
 ---
 id: issues-and-solutions
-title: ⚠️ Issues and solutions
+title: ⚠️ Issues And solutions
 sidebar_position: 7
 description: Common Prompt Issues and Solutions.
 ---

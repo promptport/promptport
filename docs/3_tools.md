@@ -1,6 +1,6 @@
 ---
 id: prompt-tools
-title: 🔧 Tools for prompt
+title: 🔧 Tools For Prompt
 sidebar_position: 3
 ---
 

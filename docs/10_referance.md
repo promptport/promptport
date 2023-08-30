@@ -1,6 +1,6 @@
 ---
 id: references
-title: 🔗 References and Reading
+title: 🔗 References And Reading
 sidebar_position: 10
 description: References and Reading.
 ---
