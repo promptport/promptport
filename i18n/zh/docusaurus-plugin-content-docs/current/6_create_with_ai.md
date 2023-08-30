@@ -1,6 +1,6 @@
 ---
 id: create-with-ai
-title: 用 AI 创建提示词
+title: 🤖 用 AI 创建提示词
 sidebar_position: 6
 description: 通过 ChatGPT 创建提示词调试示例.
 ---

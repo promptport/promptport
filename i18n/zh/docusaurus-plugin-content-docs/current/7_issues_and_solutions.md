@@ -1,6 +1,6 @@
 ---
 id: issues-and-solutions
-title: 常见问题和解决方案
+title: ⚠️ 常见问题和解决方案
 sidebar_position: 7
 description: 提示常见问题和解决方案。
 ---

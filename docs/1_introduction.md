@@ -1,6 +1,6 @@
 ---
 id: prompt-intro
-title: Introduction
+title: 📖 Introduction
 sidebar_position: 1
 ---
 

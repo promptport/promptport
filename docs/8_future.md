@@ -1,6 +1,6 @@
 ---
 id: future
-title: Future and trends
+title: ⏳ Future and trends
 sidebar_position: 8
 description: The Future and Trends of Prompts.
 ---

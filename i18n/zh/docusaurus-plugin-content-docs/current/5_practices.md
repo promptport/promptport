@@ -1,6 +1,6 @@
 ---
 id: prompt-practices
-title: 最佳实践
+title: 🏆 最佳实践
 sidebar_position: 5
 description: 提示词学习最佳实践.
 ---

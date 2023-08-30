@@ -1,6 +1,6 @@
 ---
 id: tips
-title: Tips
+title: 💡 Tips
 sidebar_position: 9
 description: Some useful tips for prompt.
 ---

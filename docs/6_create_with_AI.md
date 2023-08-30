@@ -1,6 +1,6 @@
 ---
 id: create-with-ai
-title: Create with AI
+title: 🤖 Create with AI
 sidebar_position: 6
 description: Create prompt with ChatGPT.
 ---

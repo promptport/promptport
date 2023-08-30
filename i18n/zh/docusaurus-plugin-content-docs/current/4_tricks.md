@@ -1,6 +1,6 @@
 ---
 id: usage-tricks
-title: 使用技巧
+title: 🛠️ 使用技巧
 sidebar_position: 4
 description: 实用技巧.
 ---

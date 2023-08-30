@@ -1,6 +1,6 @@
 ---
 id: prompt-types
-title: 提示词类型
+title:  📋 提示词类型
 sidebar_position: 2
 ---
 

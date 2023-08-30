@@ -1,6 +1,6 @@
 ---
 id: usage-tricks
-title: Usage tricks
+title: 🛠️ Usage tricks
 sidebar_position: 4
 description: Usage tricks for the most questions.
 ---

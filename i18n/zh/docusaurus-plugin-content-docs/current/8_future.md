@@ -1,6 +1,6 @@
 ---
 id: future
-title: 未来趋势
+title: ⏳ 未来趋势
 sidebar_position: 8
 description: 提示词未来发展和趋势分析.
 ---

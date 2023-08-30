@@ -1,6 +1,6 @@
 ---
 id: tips
-title: 使用小贴士
+title: 💡 使用小贴士
 sidebar_position: 9
 description: 实用提示词使用小技巧。
 ---

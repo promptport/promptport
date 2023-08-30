@@ -1,33 +1,280 @@
+/* stylelint-disable docusaurus/copyright-header */
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
 
+/* SVG font */
+@import url('m-plus-rounded-1c.css');
+
+/* Website font */
+@import url('poppins.css');
+
 /* You can override the default Infima variables here. */
 :root {
-  /* --ifm-color-primary: #2e8555; */
-  --ifm-color-primary: #fb6d3a;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+	--ifm-leading-desktop: 1.75;
+	--ifm-list-margin: 2rem;
+
+	/* Code */
+	--ifm-code-border-radius: .25rem;
+	--ifm-code-padding-vertical: 2px;
+	--ifm-code-padding-horizontal: 5px;
+
+	/* Alerts */
+	--ifm-color-info-dark: #fb6d3a;
+	--ifm-alert-border-width: 1px;
+	--ifm-color-success-contrast-background: #fff;
+	--ifm-color-info-contrast-background: #fff;
+	--ifm-color-warning-contrast-background: #fff;
+	--ifm-color-secondary-contrast-background: #fff;
+
+	--ifm-color-primary: #fb6d3a;
+	--ifm-heading-color: var(--ifm-color-emphasis-900);
+
+	/* Quotes */
+	--ifm-blockquote-background-color: #f8f9fc;
+	--ifm-blockquote-border-color: #edeff4;
+
+	/* Font */
+	--ifm-code-font-size: 90%;
+	--ifm-font-size-base: 95%;
+	--ifm-font-family-base: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+
+	--ifm-color-info-contrast-background: #fefefe;
+	--site-color-feedback-background: #fff;
+
+	/* Horizontal Line */
+	--ifm-hr-background-color: #dfdfdf;
 }
 
-/* linear-gradient(142deg,rgba(225,206,255,.32),rgba(255,219,207,.32) 61.12%,rgba(252,252,253,.32) 99.77%) */
+html[data-theme="dark"] {
+	--ifm-font-color-base: #bdbdbd;
+	--ifm-color-content-secondary: #bdbdbd;
+	--ifm-background-color: #1e1e1e;
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+	--ifm-color-success-contrast-foreground: #bdbdbd;
+	--ifm-color-info-contrast-foreground: #bdbdbd;
+	--ifm-color-warning-contrast-foreground: #bdbdbd;
+	--ifm-color-secondary-contrast-foreground: #bdbdbd;
+
+	--ifm-color-success-contrast-background: #272727;
+	--ifm-color-info-contrast-background: #272727;
+	--ifm-color-warning-contrast-background: #272727;
+	--ifm-color-secondary-contrast-background: #272727;
+
+	--ifm-blockquote-background-color: #272727;
+	--ifm-blockquote-border-color: #353535;
+
+	--ifm-color-info-dark: #fb6d3a;
+	--ifm-color-success-dark: #36ad99;
+
+	--site-color-feedback-background: #f0f8ff;
+
+	/* Horizontal Line */
+	--ifm-hr-background-color: #424242;
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme='dark']	.alert {
+	border-color: #272727 #272727 #272727 var(--ifm-alert-border-color);
+}
+
+.alert {
+	border-color: #e1e5ef #e1e5ef #e1e5ef var(--ifm-alert-border-color);
+}
+
+.markdown {
+	--ifm-h2-vertical-rhythm-top: 1.5;
+}
+
+.admonition {
+	margin-bottom: 2em;
+}
+
+article h2:not(:first-of-type)::before {
+	height: 1px;
+	content: "";
+	display: block;
+	background-color: var(--ifm-color-emphasis-200);
+	margin-bottom: 3rem;
+}
+
+/* Header Description */
+header + p {
+	color: var(--ifm-color-gray-600) !important;
+	margin-top: -1rem !important;
+}
+
+header + p::after {
+	height: 1px;
+	content: " ";
+	display: block;
+	background-color: var(--ifm-color-emphasis-200);
+	margin-top: 2rem;
+}
+
+.docusaurus-highlight-code-line {
+	background-color: rgba(0, 0, 0, 0.1);
+	display: block;
+	margin: 0 calc(-1 * var(--ifm-pre-padding));
+	padding: 0 var(--ifm-pre-padding);
+}
+
+video {
+	width: 100%;
+	margin-bottom: var(--ifm-leading);
+}
+
+/* Headers */
+
+h1 {
+	font-size: 2.25rem !important;
+	font-weight: 600;
+	color: var(--ifm-color-emphasis-1000);
+}
+
+h2 {
+	font-size: 1.5rem !important;
+}
+
+.doc-page h2:not(header + * + h2):before {
+	height: 1px;
+	content: " ";
+	display: block;
+	background-color: var(--ifm-color-emphasis-200);
+	margin-bottom: 2rem;
+}
+
+h3 {
+	font-size: 1.2rem !important;
+}
+
+/* Code Blocks */
+
+code {
+	color: var(--ifm-color-emphasis-900);
+}
+
+html[data-theme='dark'] .prism-code,
+html[data-theme='dark'] div[class^='codeBlockTitle'] {
+	background-color: #222 !important;
+	color: #9e9e9e !important;
+}
+
+.prism-code,
+div[class^='codeBlockTitle'] {
+	background-color: #f6f8fa !important;
+	color: #575757 !important;
+	font-size: 14px;
+	line-height: 1.6;
+}
+
+/* Disable Language Icon */
+svg[class^='iconLanguage'] {
+	display: none;
+}
+
+/* Code line counter */
+.prism-code {
+	counter-reset: line-number;
+}
+
+.prism-code .token-line::marker {
+	color: var(--ifm-color-gray-700);
+	content: counter(line-number);
+}
+
+.prism-code .token-line {
+	counter-increment: line-number;
+	display: list-item;
+	padding-left: var(--ifm-pre-padding);
+	margin-left: var(--ifm-global-spacing);
+}
+
+/* Main content */
+@media screen and (min-width: 1600px) {
+	/* Center page TODO: only fullscreen */
+	.navbar__inner, .main-wrapper {
+	width: 80%;
+	margin: 0 auto;
+	}
+
+	article,
+	.pagination-nav,
+	.alert.alert--warning:not(.theme-admonition) {
+	margin: 1rem 2rem;
+	}
+}
+
+article .badge.badge--secondary {
+	margin-bottom: 2rem;
+}
+
+/* Tables */
+table {
+	margin-bottom: 2rem;
+}
+
+.table-wrapper {
+	overflow-x: auto;
+}
+
+.table-wrapper table {
+	width: 100%;
+	display: table;
+}
+
+article p img {
+	display: block;
+	margin: 0 auto;
+}
+
+/* Sidebar */
+.menu {
+	padding-top: 2rem !important;
+	padding-bottom: 5rem !important;
+	font-size: .875rem;
+}
+
+.tippy-box .theme-code-block {
+	margin: 0;
+}
+
+details,
+blockquote {
+	margin-bottom: 1.5rem !important;
+}
+
+
+/* First items / Categories Sidebar */
+.theme-doc-sidebar-item-category-level-1 >
+.menu__list-item-collapsible:first-child {
+	color: #888;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: .85rem;
+	pointer-events: none;
+}
+
+.menu__link {
+	user-select: none;
+}
+
+.theme-doc-sidebar-item-category-level-1 {
+	margin-top: 2rem !important;
+}
+
+
+/* Zoom Image */
+
+.medium-zoom-overlay {
+	background: #FFFFFFEE none repeat scroll 0% 0% !important;
+}
+
+html[data-theme="dark"] .medium-zoom-overlay {
+	background: #272727EE none repeat scroll 0% 0% !important;
 }

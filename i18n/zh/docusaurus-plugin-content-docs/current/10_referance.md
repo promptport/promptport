@@ -1,6 +1,6 @@
 ---
 id: references
-title: 参考与扩展阅读
+title: 🔗 参考与扩展阅读
 sidebar_position: 10
 description: 参考资料，扩展阅读链接。
 ---

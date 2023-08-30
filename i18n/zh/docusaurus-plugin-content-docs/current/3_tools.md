@@ -1,6 +1,6 @@
 ---
 id: prompt-tools
-title: 提示词工具
+title: 🔧 提示词工具
 sidebar_position: 3
 ---
 
