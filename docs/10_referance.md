@@ -16,5 +16,3 @@ description: References and Reading.
 7. [GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models - arXiv](https://arxiv.org/pdf/2303.10130)
 8. [The Evolution and Significance of Prompt Engineering in the Age of Generative AI](https://www.linkedin.com/pulse/evolution-significance-prompt-engineering-age-generative-rishi-yadav)
 9. [Understanding LLM Hallucinations](https://towardsdatascience.com/llm-hallucinations-ec831dcd7786)
-
-k
