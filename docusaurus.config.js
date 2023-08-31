@@ -10,7 +10,7 @@ const config = {
   tagline: 'Welcome to PromptPort docs!',
   favicon: 'img/favicon.ico',
   url: 'https://promptport.ai',
-  baseUrl: '/docs/',
+  baseUrl: '/',
   organizationName: 'promptport.ai',
   projectName: 'promptport',
   onBrokenLinks: 'throw',
