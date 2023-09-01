@@ -4,19 +4,19 @@
     "description": "The label for version current"
   },
   "sidebar.promptSidebar.category.🔧 Tools For Prompt": {
-    "message": "🔧 Tools For Prompt",
+    "message": "🔧 提示词工具",
     "description": "The label for category 🔧 Tools For Prompt in sidebar promptSidebar"
   },
   "sidebar.promptSidebar.category.🛠️ Usage Tricks": {
-    "message": "🛠️ Usage Tricks",
+    "message": "🛠️ 使用技巧",
     "description": "The label for category 🛠️ Usage Tricks in sidebar promptSidebar"
   },
   "sidebar.promptSidebar.category.🏆 Best Practices": {
-    "message": "🏆 Best Practices",
+    "message": "🏆 最佳实践",
     "description": "The label for category 🏆 Best Practices in sidebar promptSidebar"
   },
-  "sidebar.promptSidebar.category.⚠️ Issues And Solutions": {
-    "message": "⚠️ Issues And Solutions",
-    "description": "The label for category ⚠️ Issues And Solutions in sidebar promptSidebar"
+  "sidebar.promptSidebar.category.⚠️ Issues And solutions": {
+    "message": "⚠️ 常见问题和解决方案",
+    "description": "The label for category ⚠️ Issues And solutions in sidebar promptSidebar"
   }
 }
