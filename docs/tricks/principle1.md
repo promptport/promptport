@@ -1,27 +1,12 @@
 ---
-id: usage-tricks
-title: 🛠️ Usage Tricks
-sidebar_position: 4
-description: Usage tricks for the most questions.
+id: principles-1
+title: Principle 1
+sidebar_position: 2
 ---
 
-------
+----
 
-> They can do a lot of things, but they need careful instruction to do them well.
-
-
-## Principles for Using Prompts
-
-- Principle 1: Write clear and specific instructions; clarity does not equate to brevity.
-- Principle 2: Give the model some time to think.
-
-These principles are proposed by the course [ChatGPT Prompt Engineering for Developers](https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/1/introduction). Combined with practical operations, they hope to assist in crafting your prompts.
-
-
-
-## Principle 1
-
-### Trick 1: Use Delimiters
+## Trick 1: Use Delimiters
 
 If there are different functional contents in the prompt, such as descriptive content, example content, etc., using delimiters can help the large model better understand different contents.
 
@@ -51,7 +36,7 @@ In this example, using delimiters clearly tells the LLM the content you want to 
 
 
 
-### Trick 2: Structured Output
+## Trick 2: Structured Output
 
 If there are special requirements for the output content, you can request the content to be output in a specific format in the prompt, such as HTML, JSON, etc.
 
@@ -68,7 +53,7 @@ It's important to note that whether it's GPT-3.5, GPT-4, or other large models, 
 
 
 
-### Trick 3: Conditional Checks
+## Trick 3: Conditional Checks
 
 Conditional checks essentially allow the LLM to analyze the target content in the prompt, determine if conditions are met, and then execute the corresponding process.
 
@@ -84,7 +69,7 @@ In the above example, if you don't write conditional logic in the prompt, you ge
 
 
 
-### Trick 4: Few-shot
+## Trick 4: Few-shot
 
 `Few-shot` includes concepts like `zero-shot` and `one-shot`. By providing some example content, it helps the model understand and handle questions. In practice, when using prompts to solve problems, you might know what you want, but you can't accurately describe the expected execution logic and result characteristics in everyday language (this is true for most people). The more complex the task, the harder it is. `Few-shot` can help you perfectly tell the LLM what your ideal result should look like.
 
@@ -108,58 +93,4 @@ Your task is to answer my question like an LLM expert.
 <user>: Tell me about LLM.
 ```
 
-
-
-## Principle 2
-
-### Trick 1: Complete Tasks Step by Step
-
-Chain thinking (COT) can greatly improve the accuracy of results. When faced with complex tasks, large models won't actively break down the tasks. When the task result depends on the intermediate process state, we should break down the prompt step by step when writing it, allowing the large model to operate step by step according to the designed process.
-
-Example:
-
-```
-Your task is to perform the following actions:
-1 - Summarize the following text delimited by triple # and generate a title.
-2 - Translate the text and title into English.
-3 - Output a JSON object with the following keys: origin_text, origin_title, en_title, en_text.
-
-Use the following format:
-Text: <text to summarize>
-Title: <title>
-Translation: <text translation and title translation>
-Output JSON: <json with summary and num_names>
-
-Text: ###text###
-```
-
-
-
-### Trick 2: Self-check
-
-This tip is mainly to solve the hallucination problem of large models. When using large models, you should often encounter LLM talking nonsense with a straight face. To avoid this situation, you need to let the LLM self-check the results. There must be a standard or correct answer for the check. This standard or correct answer can be provided by us as an example, or the LLM can deduce it step by step and then compare the deduced result with the target result of our task to get the final result.
-
-Example:
-
-````
-Your task is determine if the student's solution is correct or not.
-To solve the problem do the following:
-- First, work out your own solution to the problem.
-- Then compare your solution to the student's solution and evaluate \
-if the student 's solution is correct or not. Don't decide if the student's \
-solution is correct until you have done the problem yourself.
-
-Use the following format:
-...
-
-Question:
-```
-question content
-```
-
-Student's solution:
-```
-Student's solution content.
-```
-````
 

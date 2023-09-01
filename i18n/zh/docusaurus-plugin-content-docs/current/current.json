@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.promptSidebar.category.🔧 Tools For Prompt": {
+    "message": "🔧 Tools For Prompt",
+    "description": "The label for category 🔧 Tools For Prompt in sidebar promptSidebar"
+  },
+  "sidebar.promptSidebar.category.🛠️ Usage Tricks": {
+    "message": "🛠️ Usage Tricks",
+    "description": "The label for category 🛠️ Usage Tricks in sidebar promptSidebar"
+  },
+  "sidebar.promptSidebar.category.🏆 Best Practices": {
+    "message": "🏆 Best Practices",
+    "description": "The label for category 🏆 Best Practices in sidebar promptSidebar"
+  },
+  "sidebar.promptSidebar.category.⚠️ Issues And Solutions": {
+    "message": "⚠️ Issues And Solutions",
+    "description": "The label for category ⚠️ Issues And Solutions in sidebar promptSidebar"
+  }
+}

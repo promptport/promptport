@@ -154,7 +154,6 @@ h3 {
 }
 
 /* Code Blocks */
-
 code {
 	color: var(--ifm-color-emphasis-900);
 }
@@ -249,9 +248,8 @@ blockquote {
 	margin-bottom: 1.5rem !important;
 }
 
-
 /* First items / Categories Sidebar */
-.theme-doc-sidebar-item-category-level-1 >
+/* .theme-doc-sidebar-item-category-level-1 >
 .menu__list-item-collapsible:first-child {
 	color: #888;
 	font-weight: bold;
@@ -266,11 +264,20 @@ blockquote {
 
 .theme-doc-sidebar-item-category-level-1 {
 	margin-top: 2rem !important;
+} */
+
+.theme-doc-sidebar-item-category-level-1 >
+.menu__list-item-collapsible:first-child {
+	color: #888;
+	text-transform: uppercase;
+	font-size: .85rem;
 }
 
+.menu__link {
+	user-select: none;
+}
 
 /* Zoom Image */
-
 .medium-zoom-overlay {
 	background: #FFFFFFEE none repeat scroll 0% 0% !important;
 }

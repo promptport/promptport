@@ -1,28 +1,12 @@
 ---
-id: usage-tricks
-title: 🛠️ 使用技巧
-sidebar_position: 4
-description: 实用技巧.
+id: principles-1
+title: 原则1
+sidebar_position: 2
 ---
 
-------
+----
 
-> They can do a lot of things, but they need careful insturction to do them will.
-
-
-
-## 提示词使用原则
-
-- 原则 1：写清晰和具体的指示，清晰不等于简短。
-- 原则 2：给模型一点思考的时间。
-
-原则由课程 [ChatGPT Prompt Engineering for Developers](https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/1/introduction) 提出，结合实际操作，希望能给你的提示词带来一些帮助。
-
-
-
-## 原则 1
-
-### 技巧 1：使用分隔符
+## 技巧 1：使用分隔符
 
 如果提示词中存在不同功能性的内容，例如描述性内容，示例内容等，使用分隔符能够让大模型更好的理解不同的内容。
 
@@ -56,7 +40,7 @@ Remember you only task is translation, do not reply to the text.
 
 
 
-### 技巧 2：结构化输出
+## 技巧 2：结构化输出
 
 如果对于输出内容有特殊需求，可在提示词要求以特定格式输出内容。例如 HTML, JSON 等。
 
@@ -75,7 +59,7 @@ story_title, story_content, story_size
 
 
 
-### 技巧 3：条件检查
+## 技巧 3：条件检查
 
 条件检查实质是让AI对提示词中的目标内容进行分析，判断条件是否满足，然后执行对应的流程。
 
@@ -93,7 +77,7 @@ The translation should be concise and in line with the style of technical docume
 
 
 
-### 技巧 4：Few-shot 
+## 技巧 4：Few-shot 
 
 `Few-shot` 包括了 `zero-shot `, `one-shot` 等概念，通过提供一些示例内容，帮助模型理解和处理问题。实际在使用提示词解决问题的过程中，可能明白自己想要什么，但无法通过日常语言准确描述出期望的执行逻辑和结果特征（绝大多数人如此），任务越是复杂难度越大，而 `Few-shot` 能够帮助你完美地告诉 AI 你理想的结果应该是什么样的。
 
@@ -118,64 +102,3 @@ Your task is to answer my question like a AI expert.
 
 <user>: Tell me about AI.
 ```
-
-
-
-
-
-## 原则 2
-
-### 技巧 1：一步一步完成任务
-
-链式思维（COT），能大大提高结果的准确性。面对复杂任务，大模型不会主动将任务进行拆解处理。当任务结果依赖中间过程状态，那我们在写提示词的时候，应该将提示词进行一步一步拆分，让大模型按照设计的流程一步一步操作。
-
-
-
-示例：
-
-```
-Your task is to perform the following actions:
-1 - Summarize the following text delimited by triple # and generate a title.
-2 - Translate the text and title into English.
-3 - Output a JOSN object with the following keys: origin_text, origin_title, en_title, en_text.
-
-Use the following format:
-Text: <text to summarize>
-Title: <title>
-Translation: <text translation and title translation>
-Output JSON: <json with summary and num_names>
-
-Text: ###text###
-```
-
-
-
-### 技巧 2：自我检查
-
-这个技巧主要是为了解决大模型幻觉问题，在使用大模型的时候应该经常能遇到 AI 在一本正经地胡说八道，为了避免这种情况，需要让 AI 对结果进行自我检查。检查必然会对应存在一个用于判定是否正确的标准或者正确答案，一般这个标准或者正确答案可以通过我们举例提供，也可以让AI自己一步一步推导，然后将推导结果和我们任务的目标结果进行对比，得到最终结果。
-
-
-
-示例：
-
-````
-Your task is determine if the student's solution is correct or not.
-To solve the problem do the following:
-- First, work out your own solution to the problem.
-- Then compare your solution to the student's solution and evaluate \
-if the student 's solution is correct or not. Don't decide if the student's \
-solution is correct until you have done the problem yourself.
-
-Use the following format:
-...
-
-Question:
-```
-question content
-```
-
-Student's solution:
-```
-Student's solution content.
-```
-````
